@@ -4,11 +4,20 @@ title: Home
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae atque reiciendis nam, odio doloremque.
 
 active_home: active
+
+
+scripts: > 
+    <script> console.log(true) </script>
 ---
 
 <div class="container">
     <h1> Home </h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempore, illum aliquam ducimus fugit aliquid excepturi dolorum assumenda inventore molestias possimus nihil sit nemo voluptas fugiat facilis similique? Voluptate, consequatur.</p>
-    <img class="img-fluid" src="assets/images/pexels01.webp" alt="Lorem ipsum dolor sit amet.">
+    
+    {% image "assets/images/pexels01.webp", "Description of the image", "img-fluid" %}
+
+
     <button type="button" class="btn btn-primary">Primary</button>
 </div>
+
+
