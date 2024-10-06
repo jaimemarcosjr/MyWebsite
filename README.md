@@ -21,6 +21,7 @@ Eleventy (11ty) is a simpler static site generator that enables you to transform
 ## Requirements
 
 - **Node.js** (version 18 or higher)
+- **NPM** 
 - **PM2** (Process Manager for Node.js applications)
 
 ## Getting Started
