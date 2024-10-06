@@ -22,5 +22,15 @@ scripts: >
     <button type="button" class="btn btn-primary">Primary</button>
 </div>
 
-<div class="container bg-cover" style="background-image: url({% imageSrc 'assets/images/pexels-02.jpg' %}) ; height: 50vh;" ></div>
+<div class="container bg-cover" style="background-image: url({% imageSrc 'assets/images/pexels-02.jpg' %}) ; height: 50vh;" >
+    <ul>
+    {%- for post in posts -%}
+      <li>
+        {{ post["id"] }}
+      </li>
+    {%- endfor -%}
+     
+    
+    </ul>
+</div>
 

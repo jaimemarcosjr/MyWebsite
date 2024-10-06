@@ -2,7 +2,8 @@ const Image = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
   // Keep the existing passthrough copy
-  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("assets/css");
+  eleventyConfig.addPassthroughCopy("assets/js");
 
   // Define the image shortcode function
   async function imageShortcode(src, alt, cls) {
@@ -51,6 +52,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
+
+  // Sample Call: {% image "assets/images/pexels01.webp", "Description of the image", "img-fluid" %}
   
 
   // Define the image source shortcode function
@@ -78,4 +81,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("imageSrc", imageSrcShortcode);
   eleventyConfig.addLiquidShortcode("imageSrc", imageSrcShortcode);
   eleventyConfig.addJavaScriptFunction("imageSrc", imageSrcShortcode);
+
+  // Sample Call: {% imageSrc 'assets/images/pexels-02.jpg' %}
+
+
+  
 };
+
+
+
+
