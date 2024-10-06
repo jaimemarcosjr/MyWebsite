@@ -6,13 +6,7 @@ const Image = require("@11ty/eleventy-img");
 
 
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("css/style.css");
-    eleventyConfig.addPassthroughCopy("css/bootstrap.min.css");
-    eleventyConfig.addPassthroughCopy("css/bootstrap.min.css.map");
-    eleventyConfig.addPassthroughCopy("js/bootstrap.bundle.min.js");
-    eleventyConfig.addPassthroughCopy("js/script.js");
-
-    eleventyConfig.addPassthroughCopy("images");
+    eleventyConfig.addPassthroughCopy("assets");
 
     // Example: process images with `eleventy-img`
     eleventyConfig.addShortcode("image", async (src, alt) => {

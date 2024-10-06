@@ -1,0 +1,14 @@
+:root{
+    --bs-primary: #ffca16;
+    --bs-primary-rgb: #ffca16;
+    --bs-link-color: #ffca16;
+    ---bs-nav-pills-link-active-bg: #ffca16;
+    --bs-link-hover-color: #ffdb5b;
+    --bs-body-color: #231f20;
+    --bs-body-color-rgb: #231f20;
+}
+
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #ffca16;
+}
+body{ font-family: "Poppins", sans-serif; }
