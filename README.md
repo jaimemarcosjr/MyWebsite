@@ -76,14 +76,6 @@ pm2 save
 - **Eleventy**: A static site generator for building fast, modern websites. Learn more about [Eleventy](https://www.11ty.dev/).
 - **PM2**: Advanced Node.js process management tool. Read more about [PM2](https://pm2.keymetrics.io/).
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any improvements or suggestions.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Acknowledgments
 
 - Thanks to the [Eleventy](https://www.11ty.dev/) community for providing excellent documentation and support.
