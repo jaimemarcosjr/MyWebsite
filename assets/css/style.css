@@ -12,3 +12,82 @@
     --bs-nav-pills-link-active-bg: #ffca16;
 }
 body{ font-family: "Poppins", sans-serif; }
+
+/* Class for a full-sized background image covering the element */
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Class for a background image that repeats horizontally */
+.bg-repeat-x {
+    background-repeat: repeat-x;
+}
+
+/* Class for a background image that repeats vertically */
+.bg-repeat-y {
+    background-repeat: repeat-y;
+}
+
+/* Class for a background image fixed relative to the viewport */
+.bg-fixed {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Class for positioning the background image at the top right */
+.bg-top-right {
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+/* Class with a linear gradient overlay */
+.bg-gradient-overlay {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    );
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Class for a tiled background image */
+.bg-tile {
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+/* Class for stretching the background image to fill the element */
+.bg-stretch {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* Class for a background image with opacity applied to the background only */
+.bg-opacity {
+    position: relative;
+    z-index: 0;
+}
+
+.bg-opacity::before {
+    content: "";
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Class for multiple background images (images need to be set elsewhere) */
+.bg-multiple {
+    background-position: center center, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, auto;
+}
