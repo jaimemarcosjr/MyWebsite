@@ -42,6 +42,8 @@ Before running the site, install the necessary dependencies using npm:
 ```bash
 npm install -D @11ty/eleventy
 npm install -D @11ty/eleventy-img
+npm install -D @11ty/eleventy-fetch
+npm install dotenv
 ```
 
 ### 3. Install PM2

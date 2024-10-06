@@ -82,8 +82,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLiquidShortcode("imageSrc", imageSrcShortcode);
   eleventyConfig.addJavaScriptFunction("imageSrc", imageSrcShortcode);
 
-  // Sample Call: {% imageSrc 'assets/images/pexels-02.jpg' %}
-
 
   
 };

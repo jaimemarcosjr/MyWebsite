@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/jaimemarcosjr/MyWebsite#readme",
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",

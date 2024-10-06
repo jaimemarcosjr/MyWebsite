@@ -1,8 +1,9 @@
 // _data/posts.js
 const EleventyFetch = require("@11ty/eleventy-fetch");
+require("dotenv").config();
 
 module.exports = async function() {
-  const url = "https://digitalmarketingphilippines.com/wp-json/wp/v2/posts";
+  const url =   process.env.URL ;
 
   try {
     const posts = await EleventyFetch(url, {
